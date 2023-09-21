@@ -1,9 +1,6 @@
 import React from "react";
 import "./Education.css";
-import UIDesign from "../../assets/ui-design.png";
 import graduate from "../../assets/grad1.png";
-import book from "../../assets/12th.png";
-import WebDesign from "../../assets/website-design.png";
 import school from "../../assets/school.png";
 
 const Education = () => {

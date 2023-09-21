@@ -1,10 +1,7 @@
 import React from "react";
 import "./works.css";
-import Project1 from "../../assets/portfolio-2.png";
-import Project2 from "../../assets/portfolio-3.png";
+
 import blog from "../../assets/blogging.png";
-import { useState } from "react";
-import { Link } from "react-scroll";
 
 const Works = () => {
   return (
