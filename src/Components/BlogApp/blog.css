@@ -1,0 +1,46 @@
+/* .blog-app {
+  background-image: url("../../assets/bgwallpaper.jpg");
+} */
+.Heading {
+  height: 13rem;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.tagline {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.Heading h1 {
+  padding: 2rem 2rem;
+}
+
+.front-and-back {
+  margin: 1rem;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.frontend {
+  padding: 1rem;
+  margin: 1rem 4rem;
+  width: 400px;
+  background: rgb(50, 50, 50);
+  border-radius: 1rem;
+}
+.front-details {
+  margin-top: 1rem;
+}
+.backend {
+  padding: 1rem;
+  margin: 1rem 4rem;
+  width: 400px;
+  background: rgb(50, 50, 50);
+  border-radius: 1rem;
+}
+/* h2 {
+  text-align: center;
+} */

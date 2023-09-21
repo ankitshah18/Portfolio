@@ -1,0 +1,95 @@
+#projects {
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.projectsTitle {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.projectDesc {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.projectsImgs {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 65rem;
+  margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectImg {
+  object-fit: cover;
+  height: 30rem;
+  margin: 0.5rem;
+  transition: filter 0.3s ease-in-out;
+}
+.projectImg {
+  box-shadow: 0px 0.5rem 2rem rgba(3, 3, 3, 0.75);
+  /* background-position: 0% 50%; */
+  transition: 0.3s ease-in-out;
+  /* width: 400px;
+  height: auto;
+  -webkit-transition: 0.1s ease-in-out;
+  -webkit-filter: blur(2px);
+  filter: blur(3px); */
+}
+
+.ReadMore {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  transition: backdrop-filter 0.3s ease-in-out;
+  display: flex;
+}
+
+.projectsImgs:hover .ReadMore {
+  /* display: block; */
+  opacity: 1;
+  backdrop-filter: blur(5px);
+}
+.ReadMore:hover {
+  backdrop-filter: blur(5px);
+}
+
+.projectsBtn {
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: white;
+  margin: 3rem 0;
+}
+.projectsBtn:hover {
+  background: rgb(237, 245, 4);
+}
+
+@media screen and (max-width: 840px) {
+  .projectImg {
+    height: 65vw;
+  }
+  .projectImg:hover {
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+  }
+}
