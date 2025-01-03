@@ -1,0 +1,117 @@
+.single-work-container {
+  padding: 3rem 10%;
+  background-color: #141414; /* Netflix's dark background color */
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  height: 100vh;
+}
+
+.title-img-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-animal-container {
+  margin: 0 auto;
+  height: 150px;
+  width: 150px; /* Adjusted for better proportion */
+  margin-top: 1rem;
+}
+
+.title-img-container h2 {
+  font-size: 2.5rem;
+  color: yellow; /* Netflix red */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.description-container {
+  margin-bottom: 2rem;
+  border-left: 2px solid yellow; /* Netflix red accent */
+  padding-left: 1.5rem;
+}
+
+.description-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: yellow;
+}
+
+.about-project-container,
+.tech-container {
+  margin-bottom: 2rem;
+}
+
+.about-project-container h3,
+.tech-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: yellow;
+}
+
+.about-project-container p,
+.tech-container p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.about-project-container p::before,
+.tech-container p::before {
+  content: "•";
+  color: yellow; /* Accent color for bullet */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.single-work-container img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add a subtle shadow */
+}
+
+.single-work-container h3 {
+  border-bottom: 1px solid yellow; /* Underline the section headers */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.outcome-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: yellow;
+}
+
+@media (max-width: 768px) {
+  .single-work-container {
+    height: 100vh;
+  }
+
+  .title-img-container h2 {
+    font-size: 2rem;
+  }
+
+  .description-container,
+  .about-project-container,
+  .tech-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-project-container p,
+  .tech-container p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 468px) {
+  .single-work-container {
+    height: 100%;
+  }
+}
+@media (max-width: 368px) {
+  .single-work-container {
+    height: 100%;
+  }
+}

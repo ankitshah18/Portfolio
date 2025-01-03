@@ -1,15 +1,14 @@
 #projects {
   margin: auto;
-  /* min-height: calc(100vh - 4rem); */
-  height: 50vh;
+  height: auto; /* Adjust height to content */
   width: 100vw;
-  max-width: 60rem;
+  max-width: 80rem; /* Adjust to desired max width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 0 1rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
 }
 
 .projectsTitle {
@@ -19,32 +18,74 @@
   text-underline-offset: 5px;
 }
 
-.projectDesc {
-  font-weight: 300;
-  font-size: 1rem;
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Spacing between cards */
+  width: 100%;
+  justify-items: center;
 }
 
-.projectsImgs {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  max-width: 65rem;
-  margin-top: 3rem;
-  position: relative;
-  overflow: hidden;
-}
 .projectCard {
+  width: 100%; /* Full width within the grid column */
+  max-width: 350px; /* Optional max width for better look */
+  height: auto;
   box-shadow: 2px 2px 4px 0px rgba(94, 94, 94, 0.5);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
+  background-color: white; /* Optional background for better contrast */
 }
+
 .projectCard img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  object-fit: cover; /* Ensure images fit nicely */
+}
+.projectCard p {
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .img-link {
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem; /* Spacing between elements in img-link */
+}
+
+.projectDesc {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.img-link svg {
+  width: 100px; /* Match the size of your other images */
+  height: 100px;
+  color: #555; /* Set a default color for visibility */
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  background-color: yellow;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid yellow;
+  cursor: pointer;
+}
+.read-more:hover {
+  background-color: orange;
+}
+.project-link {
+  color: #555;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

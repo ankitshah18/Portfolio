@@ -7,8 +7,9 @@ import Footer from "./Components/Footer/footer";
 import { Routes, Route } from "react-router-dom";
 import BlogApp from "./Components/BlogApp/blogapp";
 import Experience from "./Components/Experience/Experience";
-import SingleWork from "./Components/Works/SingleWork";
 import { AppProvider } from "./Components/Context/AppProvider";
+import Netflix from "./Components/Works/Netflix";
+import StreetWorldz from "./Components/Works/StreetWorldz";
 
 // import DarkMode from "./Components/DarkMode/darkMode";
 function App() {
@@ -31,7 +32,8 @@ function App() {
           }
         ></Route>
         <Route path="/BlogApp" element={<BlogApp />} />
-        <Route path="/SingleWork" element={<SingleWork />} />
+        <Route path="/SingleWork/netflixclone" element={<Netflix />} />
+        <Route path="/SingleWork/streetworldz" element={<StreetWorldz />} />
       </Routes>
     </AppProvider>
   );

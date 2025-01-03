@@ -1,9 +1,9 @@
 import React from "react";
 import "./intro.css";
-
-import btnImg from "../../assets/hireme.png";
+import { TiDocumentText } from "react-icons/ti";
+// import btnImg from "../../assets/hireme.png";
 import { Link } from "react-scroll";
-import resume from "../../assets/Resume(Ankit).pdf";
+import resume from "../../assets/resume.pdf";
 
 const Intro = () => {
   return (
@@ -16,17 +16,17 @@ const Intro = () => {
           <p className="introPara">A person who loves coding.</p>
         </span>
         <Link>
-          <button className="btn">
+          {/* <button className="btn">
             <img src={btnImg} alt="" className="btnImg" />
             Hire Me
-          </button>
+          </button> */}
           <button
             className="Resumebtn"
             onClick={() => {
               window.open(resume);
             }}
           >
-            Download Resume
+            <TiDocumentText size={20} /> Download Resume
           </button>
         </Link>
       </div>

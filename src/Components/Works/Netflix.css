@@ -1,0 +1,117 @@
+/* Netflix.css */
+
+.single-work {
+  padding: 3rem 10%;
+  background-color: #141414; /* Netflix's dark background color */
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  height: 100vh;
+}
+
+.title-img {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-img img {
+  height: auto;
+  width: 150px; /* Adjusted for better proportion */
+  margin-top: 1rem;
+}
+
+.title-img h2 {
+  font-size: 2.5rem;
+  color: #e50914; /* Netflix red */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.description {
+  margin-bottom: 2rem;
+  border-left: 2px solid #e50914; /* Netflix red accent */
+  padding-left: 1.5rem;
+}
+
+.description h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #e50914;
+}
+
+.about-project,
+.tech {
+  margin-bottom: 2rem;
+}
+
+.about-project h3,
+.tech h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #e50914;
+}
+
+.about-project p,
+.tech p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.about-project p::before,
+.tech p::before {
+  content: "•";
+  color: #e50914; /* Accent color for bullet */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.single-work img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add a subtle shadow */
+}
+
+.single-work h3 {
+  border-bottom: 1px solid #e50914; /* Underline the section headers */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.outcome h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #e50914;
+}
+
+@media (max-width: 768px) {
+  .single-work {
+    height: 100vh;
+  }
+
+  .title-img h2 {
+    font-size: 2rem;
+  }
+
+  .description,
+  .about-project,
+  .tech {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-project p,
+  .tech p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 468px) {
+  .single-work {
+    height: 100%;
+  }
+}
+@media (max-width: 368px) {
+  .single-work {
+    height: 100%;
+  }
+}
